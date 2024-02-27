@@ -2,12 +2,14 @@ package com.dts.storageserice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
-public class StorageSericeApplication {
+@EnableJpaAuditing
+public class StorageServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(StorageSericeApplication.class, args);
+        SpringApplication.run(StorageServiceApplication.class, args);
     }
 
 }
