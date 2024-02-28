@@ -7,6 +7,12 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.FieldDefaults;
 
+
+/*
+ *NOTE: Every create and update request should extend this BaseResponse class
+ * and must override convert method
+ *
+ * */
 @Getter
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)

@@ -11,6 +11,12 @@ import org.springframework.data.domain.Pageable;
 import java.io.Serializable;
 import java.util.Date;
 
+
+/*
+*NOTE: Every filter request should extend this BaseFilter class
+*
+* DISCLAIMER: we can change fields in it
+* */
 @Getter
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)

@@ -6,6 +6,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
 
 
+/*NOTE: Every entity should extend this BaseEntity class */
 @MappedSuperclass
 public class BaseEntity extends AbstractAuditingEntity {
 

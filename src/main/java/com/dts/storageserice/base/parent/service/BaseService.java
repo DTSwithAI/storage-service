@@ -16,6 +16,11 @@ import java.util.function.Supplier;
 
 import static com.dts.storageserice.base.parent.model.MessageKeys.*;
 
+
+
+/*
+ *NOTE: every service should extend this Base Service
+ * */
 public abstract class BaseService<ID, F extends BaseFilter, R extends BaseRepository<E, ID>, E extends AbstractAuditingEntity, RES extends BaseResponse<E, RES>, REQ extends BaseRequest<E>> {
     protected final R repository;
 
